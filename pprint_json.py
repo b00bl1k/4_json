@@ -3,12 +3,12 @@ import sys
 
 
 def load_data(filepath):
-    with open(filepath, 'r', encoding="utf8") as file_handler:
+    with open(filepath, "r", encoding="utf8") as file_handler:
         return json.load(file_handler)
 
 
 def pretty_print_json(obj):
-    print(json.dumps(obj, indent=4))
+    print(json.dumps(obj, indent=4, ensure_ascii=False))
 
 
 def main():
